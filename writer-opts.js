@@ -4,6 +4,8 @@ const Q = require("q");
 const readFile = Q.denodeify(require("fs").readFile);
 const resolve = require("path").resolve;
 
+const gitmojis = require("./gitmojis.json");
+
 module.exports = Q.all([
   readFile(resolve(__dirname, "./templates/template.hbs"), "utf-8"),
   readFile(resolve(__dirname, "./templates/header.hbs"), "utf-8"),
@@ -19,15 +21,11 @@ module.exports = Q.all([
 });
 
 function getWriterOpts() {
-  const detailedTypes = {
-    ":bug:": "Bug Fixes",
-    ":sparkles:": "Features",
-    ":boom:": "Breaking Changes",
-  };
-  const featuredTypes = [];
-  for (let [key, value] of Object.entries(detailedTypes)) {
-    featuredTypes.push(`${key} ${value}`);
-  }
+  const featuredTypes = [
+    `:boom: ${gitmojis[":boom:"]}`,
+    `:sparkles: ${gitmojis[":sparkles:"]}`,
+    `:bug: ${gitmojis[":bug:"]}`,
+  ];
   return {
     transform: commit => {
       let typeLength;
@@ -37,9 +35,8 @@ function getWriterOpts() {
         return;
       }
 
-      if (detailedTypes[commit.type])
-        commit.type += ` ${detailedTypes[commit.type]}`;
-
+      // Add human-readable type description.
+      commit.type += ` ${gitmojis[commit.type]}`;
       commit.type = commit.type.substring(0, 72);
       typeLength = commit.type.length;
 
