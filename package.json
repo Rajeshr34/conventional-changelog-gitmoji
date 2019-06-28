@@ -1,0 +1,31 @@
+{
+  "name": "@dior/conventional-changelog-gitmoji",
+  "version": "0.1.0",
+  "description": "conventional-changelog gitmoji preset",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onedior/conventional-changelog-gitmoji.git"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "atom",
+    "gitmoji",
+    "preset"
+  ],
+  "author": {
+    "name": "OneDior Tech Team",
+    "email": "onedior-ops@christiandior.com"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onedior/conventional-changelog-gitmoji/issues"
+  },
+  "homepage": "https://github.com/onedior/conventional-changelog-gitmoji#readme",
+  "dependencies": {
+    "q": "1.5.1"
+  }
+}
