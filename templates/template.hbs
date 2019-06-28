@@ -3,20 +3,22 @@
 {{#each featuredCommitGroups}}
 {{#if title}}
 ### {{title}}
+
 {{/if}}
 {{#each scopedCommits}}
 #### {{name}}
+
 {{#each commits}}
 {{> commit root=@root}}
 {{/each}}
-{{/each}}
-{{/each}}
 
+{{/each}}
+{{/each}}
 {{#each commitGroups}}
 {{#if title}}
 ### {{title}}
-{{/if}}
 
+{{/if}}
 <details>
 <summary>{{count}} commit(s)</summary>
 
@@ -34,6 +36,7 @@
 
 {{~!-- commit references --}}{{#if references}}, closes{{~#each references}}
 {{#if @root.linkReferences}}[{{#if this.owner}}{{this.owner}}/{{/if}}{{this.repository}}#{{this.issue}}]({{#if @root.host}}{{@root.host}}/{{/if}}{{#if this.repository}}{{#if this.owner}}{{this.owner}}/{{/if}}{{this.repository}}{{else}}{{#if @root.owner}}{{@root.owner}}/{{/if}}{{@root.repository}}{{/if}}/{{@root.issue}}/{{this.issue}}){{else}}{{#if this.owner}}{{this.owner}}/{{/if}}{{this.repository}}#{{this.issue}}{{/if}}{{/each}}{{/if}}
+
 </li>
 {{/each}}
 </ul>
