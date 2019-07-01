@@ -1,6 +1,6 @@
 {
-  "name": "@dior/conventional-changelog-gitmoji",
-  "version": "0.1.3",
+  "name": "conventional-changelog-gitmoji",
+  "version": "0.1.5",
   "description": "conventional-changelog gitmoji preset",
   "main": "index.js",
   "repository": {
