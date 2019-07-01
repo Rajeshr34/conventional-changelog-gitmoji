@@ -35,8 +35,8 @@ function getWriterOpts() {
         return;
       }
 
-      // Add human-readable type description.
-      commit.type += ` ${gitmojis[commit.type]}`;
+      // Add human-readable type description for known types.
+      commit.type += gitmojis[commit.type] ? ` ${gitmojis[commit.type]}` : "";
       commit.type = commit.type.substring(0, 72);
       typeLength = commit.type.length;
 
