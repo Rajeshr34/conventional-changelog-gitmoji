@@ -180,7 +180,19 @@
     "description": "Adding or updating animations and transitions"
   },
   {
-    "symbols": [":core:", "❤️"],
-    "description": "Adding or updating animations and transitions"
+    "symbols": [":book:", "📖"],
+    "description": "Updating a Storybook stories"
+  },
+  {
+    "symbols": [":heart:", "❤️"],
+    "description": "Updating a core file"
+  },
+  {
+    "symbols": [":cn:", "🇨🇳"],
+    "description": "Writing China specific code"
+  },
+  {
+    "symbols": [":kr:", "🇰🇷"],
+    "description": "Writing Korea specific code"
   }
 ]
