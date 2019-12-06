@@ -1,5 +1,7 @@
 # Conventional Changelog Gitmoji Preset
 
+![npm](https://img.shields.io/npm/v/conventional-changelog-gitmoji.svg)
+
 **Heads up! This is an opinionated conventional changelog preset used by our internal tech team. We hope you'll find it usefull!**
 
 Are you using [gitmoji library](https://gitmoji.carloscuesta.me/) as a convention for your commit messages ? Then you will love this [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) preset ! It will help you generate a full featured changelog (with scope support).

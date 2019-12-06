@@ -1,5 +1,9 @@
 const parserOpts = require("./parser-opts");
 
+const MAJOR = [":boom:"];
+
+const MINOR = [":sparkles:", ":zap:"];
+
 module.exports = {
   parserOpts,
 
@@ -9,10 +13,10 @@ module.exports = {
     let features = 0;
 
     commits.forEach(commit => {
-      if (commit.type === ":boom:") {
+      if (MAJOR.includes(commit.type)) {
         breakings += 1;
         level = 0;
-      } else if (commit.type === ":sparkles:") {
+      } else if (MINOR.includes(commit.type)) {
         features += 1;
         if (level === 2) {
           level = 1;
@@ -22,7 +26,7 @@ module.exports = {
 
     return {
       level: level,
-      reason: `There are ${breakings} BREAKING CHANGES and ${features} features`,
+      reason: `There are ${breakings} BREAKING CHANGES and ${features} features`
     };
-  },
+  }
 };
