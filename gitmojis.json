@@ -1,64 +1,186 @@
-{
-  ":art:": "Improving structure / format of the code",
-  ":zap:": "Improving performance",
-  ":fire:": "Removing code or files",
-  ":bug:": "Fixing a bug",
-  ":ambulance:": "Critical hotfix",
-  ":sparkles:": "Introducing new features",
-  ":pencil:": "Writing docs",
-  ":rocket:": "Deploying stuff",
-  ":lipstick:": "Updating the UI and style files",
-  ":tada:": "Initial commit",
-  ":white_check_mark:": "Updating tests",
-  ":lock:": "Fixing security issues",
-  ":apple:": "Fixing something on macOS",
-  ":penguin:": "Fixing something on Linux",
-  ":checkered_flag:": "Fixing something on Windows",
-  ":robot:": "Fixing something on Android",
-  ":green_apple:": "Fixing something on iOS",
-  ":bookmark:": "Releasing / Version tags",
-  ":rotating_light:": "Removing linter warnings",
-  ":construction:": "Work in progress",
-  ":green_heart:": "Fixing CI Build",
-  ":arrow_down:": "Downgrading dependencies",
-  ":arrow_up:": "Upgrading dependencies",
-  ":pushpin:": "Pinning dependencies to specific versions",
-  ":construction_worker:": "Adding CI build system",
-  ":chart_with_upwards_trend:": "Adding analytics or tracking code",
-  ":recycle:": "Refactoring code",
-  ":whale:": "Work about Docker",
-  ":heavy_plus_sign:": "Adding a dependency",
-  ":heavy_minus_sign:": "Removing a dependency",
-  ":wrench:": "Changing configuration files",
-  ":globe_with_meridians:": "Internationalization and localization",
-  ":pencil2:": "Fixing typos",
-  ":poop:": "Writing bad code that needs to be improved",
-  ":rewind:": "Reverting changes",
-  ":twisted_rightwards_arrows:": "Merging branches",
-  ":package:": "Updating compiled files or packages",
-  ":alien:": "Updating code due to external API changes",
-  ":truck:": "Moving or renaming files",
-  ":page_facing_up:": "Adding or updating license",
-  ":boom:": "Introducing breaking changes",
-  ":bento:": "Adding or updating assets",
-  ":ok_hand:": "Updating code due to code review changes",
-  ":wheelchair:": "Improving accessibility",
-  ":bulb:": "Documenting source code",
-  ":beers:": "Writing code drunkenly",
-  ":speech_balloon:": "Updating text and literals",
-  ":card_file_box:": "Performing database related changes",
-  ":loud_sound:": "Adding logs",
-  ":mute:": "Removing logs",
-  ":busts_in_silhouette:": "Adding contributor(s)",
-  ":children_crossing:": "Improving user experience / usability",
-  ":building_construction:": "Making architectural changes",
-  ":iphone:": "Working on responsive design",
-  ":clown_face:": "Mocking things",
-  ":egg:": "Adding an easter egg",
-  ":see_no_evil:": "Adding or updating a .gitignore file",
-  ":camera_flash:": "Adding or updating snapshots",
-  ":alembic:": "Experimenting new things",
-  ":mag:": "Improving SEO",
-  ":wheel_of_dharma:": "Work about Kubernetes",
-  ":label:": "Adding or updating types (Flow, TypeScript)"
-}
+[
+  {
+    "symbols": [":art:", "🎨"],
+    "description": "Improving structure / format of the code"
+  },
+  { "symbols": [":zap:", "⚡️"], "description": "Improving performance" },
+  { "symbols": [":fire:", "🔥"], "description": "Removing code or files" },
+  { "symbols": [":bug:", "🐛"], "description": "Fixing a bug" },
+  { "symbols": [":ambulance:", "🚑"], "description": "Critical hotfix" },
+  {
+    "symbols": [":sparkles:", "✨"],
+    "description": "Introducing new features"
+  },
+  { "symbols": [":pencil:", "📝"], "description": "Writing docs" },
+  { "symbols": [":rocket:", "🚀"], "description": "Deploying stuff" },
+  {
+    "symbols": [":lipstick:", "💄"],
+    "description": "Updating the UI and style files"
+  },
+  { "symbols": [":tada:", "🎉"], "description": "Initial commit" },
+  { "symbols": [":white_check_mark:", "✅"], "description": "Updating tests" },
+  { "symbols": [":lock:", "🔒"], "description": "Fixing security issues" },
+  { "symbols": [":apple:", "🍎"], "description": "Fixing something on macOS" },
+  {
+    "symbols": [":penguin:", "🐧"],
+    "description": "Fixing something on Linux"
+  },
+  {
+    "symbols": [":checkered_flag:", "🏁"],
+    "description": "Fixing something on Windows"
+  },
+  {
+    "symbols": [":robot:", "🤖"],
+    "description": "Fixing something on Android"
+  },
+  {
+    "symbols": [":green_apple:", "🍏"],
+    "description": "Fixing something on iOS"
+  },
+  {
+    "symbols": [":bookmark:", "🔖"],
+    "description": "Releasing / Version tags"
+  },
+  {
+    "symbols": [":rotating_light:", "🚨"],
+    "description": "Removing linter warnings"
+  },
+  { "symbols": [":construction:", "🚧"], "description": "Work in progress" },
+  { "symbols": [":green_heart:", "💚"], "description": "Fixing CI Build" },
+  {
+    "symbols": [":arrow_down:", "⬇️"],
+    "description": "Downgrading dependencies"
+  },
+  { "symbols": [":arrow_up:", "⬆️"], "description": "Upgrading dependencies" },
+  {
+    "symbols": [":pushpin:", "📌"],
+    "description": "Pinning dependencies to specific versions"
+  },
+  {
+    "symbols": [":construction_worker:", "👷"],
+    "description": "Adding CI build system"
+  },
+  {
+    "symbols": [":chart_with_upwards_trend:", "📈"],
+    "description": "Adding analytics or tracking code"
+  },
+  { "symbols": [":recycle:", "♻️"], "description": "Refactoring code" },
+  { "symbols": [":whale:", "🐳"], "description": "Work about Docker" },
+  {
+    "symbols": [":heavy_plus_sign:", "➕"],
+    "description": "Adding a dependency"
+  },
+  {
+    "symbols": [":heavy_minus_sign:", "➖"],
+    "description": "Removing a dependency"
+  },
+  {
+    "symbols": [":wrench:", "🔧"],
+    "description": "Changing configuration files"
+  },
+  {
+    "symbols": [":globe_with_meridians:", "🌐"],
+    "description": "Internationalization and localization"
+  },
+  { "symbols": [":pencil2:", "✏️"], "description": "Fixing typos" },
+  {
+    "symbols": [":poop:", "💩"],
+    "description": "Writing bad code that needs to be improved"
+  },
+  { "symbols": [":rewind:", "⏪"], "description": "Reverting changes" },
+  {
+    "symbols": [":twisted_rightwards_arrows:", "🔀"],
+    "description": "Merging branches"
+  },
+  {
+    "symbols": [":package:", "📦"],
+    "description": "Updating compiled files or packages"
+  },
+  {
+    "symbols": [":alien:", "👽"],
+    "description": "Updating code due to external API changes"
+  },
+  { "symbols": [":truck:", "🚚"], "description": "Moving or renaming files" },
+  {
+    "symbols": [":page_facing_up:", "📄"],
+    "description": "Adding or updating license"
+  },
+  {
+    "symbols": [":boom:", "💥"],
+    "description": "Introducing breaking changes"
+  },
+  { "symbols": [":bento:", "🍱"], "description": "Adding or updating assets" },
+  {
+    "symbols": [":ok_hand:", "👌"],
+    "description": "Updating code due to code review changes"
+  },
+  {
+    "symbols": [":wheelchair:", "♿️"],
+    "description": "Improving accessibility"
+  },
+  { "symbols": [":bulb:", "💡"], "description": "Documenting source code" },
+  { "symbols": [":beers:", "🍻"], "description": "Writing code drunkenly" },
+  {
+    "symbols": [":speech_balloon:", "💬"],
+    "description": "Updating text and literals"
+  },
+  {
+    "symbols": [":card_file_box:", "🗃"],
+    "description": "Performing database related changes"
+  },
+  { "symbols": [":loud_sound:", "🔊"], "description": "Adding logs" },
+  { "symbols": [":mute:", ":mute:"], "description": "Removing logs" },
+  {
+    "symbols": [":busts_in_silhouette:", "👥"],
+    "description": "Adding contributor(s)"
+  },
+  {
+    "symbols": [":children_crossing:", "🚸"],
+    "description": "Improving user experience / usability"
+  },
+  {
+    "symbols": [":building_construction:", "🏗"],
+    "description": "Making architectural changes"
+  },
+  {
+    "symbols": [":iphone:", "📱"],
+    "description": "Working on responsive design"
+  },
+  { "symbols": [":clown_face:", "🤡"], "description": "Mocking things" },
+  { "symbols": [":egg:", "🥚"], "description": "Adding an easter egg" },
+  {
+    "symbols": [":see_no_evil:", "🙈"],
+    "description": "Adding or updating a .gitignore file"
+  },
+  {
+    "symbols": [":camera_flash:", "📸"],
+    "description": "Adding or updating snapshots"
+  },
+  { "symbols": [":alembic:", "⚗"], "description": "Experimenting new things" },
+  { "symbols": [":mag:", "🔍"], "description": "Improving SEO" },
+  {
+    "symbols": [":wheel_of_dharma:", "☸️"],
+    "description": "Work about Kubernetes"
+  },
+  {
+    "symbols": [":label:", "🏷️"],
+    "description": "Adding or updating types (Flow, TypeScript)"
+  },
+  {
+    "symbols": [":seedling:", "🌱"],
+    "description": "Adding or updating seed files"
+  },
+  {
+    "symbols": [":triangular_flag_on_post:", "🚩"],
+    "description": "Adding, updating, or removing feature flags"
+  },
+  { "symbols": [":goal_net:", "🥅"], "description": "Catching errors" },
+  {
+    "symbols": [":dizzy:", "💫"],
+    "description": "Adding or updating animations and transitions"
+  },
+  {
+    "symbols": [":core:", "❤️"],
+    "description": "Adding or updating animations and transitions"
+  }
+]

@@ -4,12 +4,19 @@ const Q = require("q");
 const readFile = Q.denodeify(require("fs").readFile);
 const resolve = require("path").resolve;
 
-const gitmojis = require("./gitmojis.json");
+const gitmojisList = require("./gitmojis.json");
+
+const gitmojis = gitmojisList.reduce((acc, e) => {
+  e.symbols.forEach(s => {
+    acc[s] = e.description;
+  });
+  return acc;
+}, []);
 
 module.exports = Q.all([
   readFile(resolve(__dirname, "./templates/template.hbs"), "utf-8"),
   readFile(resolve(__dirname, "./templates/header.hbs"), "utf-8"),
-  readFile(resolve(__dirname, "./templates/commit.hbs"), "utf-8"),
+  readFile(resolve(__dirname, "./templates/commit.hbs"), "utf-8")
 ]).spread((template, header, commit) => {
   const writerOpts = getWriterOpts();
 
@@ -24,7 +31,7 @@ function getWriterOpts() {
   const featuredTypes = [
     `:boom: ${gitmojis[":boom:"]}`,
     `:sparkles: ${gitmojis[":sparkles:"]}`,
-    `:bug: ${gitmojis[":bug:"]}`,
+    `:bug: ${gitmojis[":bug:"]}`
   ];
   return {
     transform: commit => {
@@ -74,7 +81,7 @@ function getWriterOpts() {
           } else {
             group.scopedCommits[commit.scope] = {
               name: commit.scope,
-              commits: [commit],
+              commits: [commit]
             };
           }
           group.count = group.commits.length;
@@ -89,6 +96,6 @@ function getWriterOpts() {
         group => featuredTypes.indexOf(group.title) === -1
       );
       return context;
-    },
+    }
   };
 }
