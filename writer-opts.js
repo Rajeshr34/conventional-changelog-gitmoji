@@ -51,10 +51,6 @@ function getWriterOpts() {
         commit.hash = commit.hash.substring(0, 7);
       }
 
-      if (typeof commit.subject === "string") {
-        commit.subject = commit.subject.substring(0, 72 - typeLength);
-      }
-
       return commit;
     },
     groupBy: "type",
