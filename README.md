@@ -17,12 +17,18 @@ The following bump levels are applied in order of importance.
 ### major
 
 At least one breaking change is introduce, therefore if a commit contains the emoji:
+
 - :boom: `:boom:`
 
 ### minor
 
 At least one new feature is introduce, therefore if a commit contains the emoji:
+
 - :sparkles: `:sparkles:`
+- :zap: `:zap:`
+- :heart: `:heart:`
+- :alembic: `:alembic:`
+- :recycle: `:recycle:`
 
 ### patch
 
