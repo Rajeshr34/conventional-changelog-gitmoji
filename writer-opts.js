@@ -8,10 +8,20 @@ const gitmojisList = require("./gitmojis.json");
 
 const gitmojis = gitmojisList.reduce((acc, e) => {
   e.symbols.forEach(s => {
-    acc[s] = e.description;
+    acc[s] = {
+      desc: e.description,
+      name: e.symbols[0]
+    };
   });
   return acc;
 }, []);
+
+const resolveType = type => {
+  type = type.trim();
+  return gitmojis[type]
+    ? `${gitmojis[type].name} ${gitmojis[type].desc}`
+    : type;
+};
 
 module.exports = Q.all([
   readFile(resolve(__dirname, "./templates/template.hbs"), "utf-8"),
@@ -29,24 +39,19 @@ module.exports = Q.all([
 
 function getWriterOpts() {
   const featuredTypes = [
-    `:boom: ${gitmojis[":boom:"]}`,
-    `:sparkles: ${gitmojis[":sparkles:"]}`,
-    `:bug: ${gitmojis[":bug:"]}`
+    `:boom: ${gitmojis[":boom:"].desc}`,
+    `:sparkles: ${gitmojis[":sparkles:"].desc}`,
+    `:bug: ${gitmojis[":bug:"].desc}`
   ];
   return {
     transform: commit => {
-      let typeLength;
-
       // Do not render non-compliant commits.
       if (!commit.type || typeof commit.type !== "string") {
         return;
       }
 
       // Add human-readable type description for known types.
-      commit.type += gitmojis[commit.type] ? ` ${gitmojis[commit.type]}` : "";
-      commit.type = commit.type.substring(0, 72);
-      typeLength = commit.type.length;
-
+      commit.type = resolveType(commit.type);
       if (typeof commit.hash === "string") {
         commit.hash = commit.hash.substring(0, 7);
       }

@@ -3,7 +3,10 @@
     "symbols": [":art:", "🎨"],
     "description": "Improving structure / format of the code"
   },
-  { "symbols": [":zap:", "⚡️"], "description": "Improving performance" },
+  {
+    "symbols": [":zap:", "⚡️", "⚡️"],
+    "description": "Improving performance"
+  },
   { "symbols": [":fire:", "🔥"], "description": "Removing code or files" },
   { "symbols": [":bug:", "🐛"], "description": "Fixing a bug" },
   { "symbols": [":ambulance:", "🚑"], "description": "Critical hotfix" },
@@ -48,10 +51,13 @@
   { "symbols": [":construction:", "🚧"], "description": "Work in progress" },
   { "symbols": [":green_heart:", "💚"], "description": "Fixing CI Build" },
   {
-    "symbols": [":arrow_down:", "⬇️"],
+    "symbols": [":arrow_down:", "⬇️", "⬇"],
     "description": "Downgrading dependencies"
   },
-  { "symbols": [":arrow_up:", "⬆️"], "description": "Upgrading dependencies" },
+  {
+    "symbols": [":arrow_up:", "⬆️", "⬆"],
+    "description": "Upgrading dependencies"
+  },
   {
     "symbols": [":pushpin:", "📌"],
     "description": "Pinning dependencies to specific versions"
@@ -64,7 +70,7 @@
     "symbols": [":chart_with_upwards_trend:", "📈"],
     "description": "Adding analytics or tracking code"
   },
-  { "symbols": [":recycle:", "♻️"], "description": "Refactoring code" },
+  { "symbols": [":recycle:", "♻", "♻️"], "description": "Refactoring code" },
   { "symbols": [":whale:", "🐳"], "description": "Work about Docker" },
   {
     "symbols": [":heavy_plus_sign:", "➕"],
@@ -82,7 +88,7 @@
     "symbols": [":globe_with_meridians:", "🌐"],
     "description": "Internationalization and localization"
   },
-  { "symbols": [":pencil2:", "✏️"], "description": "Fixing typos" },
+  { "symbols": [":pencil2:", "✏", "✏️"], "description": "Fixing typos" },
   {
     "symbols": [":poop:", "💩"],
     "description": "Writing bad code that needs to be improved"
@@ -115,7 +121,7 @@
     "description": "Updating code due to code review changes"
   },
   {
-    "symbols": [":wheelchair:", "♿️"],
+    "symbols": [":wheelchair:", "♿", "♿️"],
     "description": "Improving accessibility"
   },
   { "symbols": [":bulb:", "💡"], "description": "Documenting source code" },
@@ -129,7 +135,7 @@
     "description": "Performing database related changes"
   },
   { "symbols": [":loud_sound:", "🔊"], "description": "Adding logs" },
-  { "symbols": [":mute:", ":mute:"], "description": "Removing logs" },
+  { "symbols": [":mute:", "🔊"], "description": "Removing logs" },
   {
     "symbols": [":busts_in_silhouette:", "👥"],
     "description": "Adding contributor(s)"
@@ -156,10 +162,13 @@
     "symbols": [":camera_flash:", "📸"],
     "description": "Adding or updating snapshots"
   },
-  { "symbols": [":alembic:", "⚗"], "description": "Experimenting new things" },
+  {
+    "symbols": [":alembic:", "⚗", "⚗"],
+    "description": "Experimenting new things"
+  },
   { "symbols": [":mag:", "🔍"], "description": "Improving SEO" },
   {
-    "symbols": [":wheel_of_dharma:", "☸️"],
+    "symbols": [":wheel_of_dharma:", "☸", "☸️"],
     "description": "Work about Kubernetes"
   },
   {
@@ -184,7 +193,7 @@
     "description": "Updating a Storybook stories"
   },
   {
-    "symbols": [":heart:", "❤️"],
+    "symbols": [":heart:", "❤", "❤️"],
     "description": "Updating a core file"
   },
   {
