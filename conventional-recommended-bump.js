@@ -1,8 +1,8 @@
 const parserOpts = require("./parser-opts");
 
-const MAJOR = [":boom:"];
+const MAJOR = [":boom:", "💥"];
 
-const MINOR = [":sparkles:", ":zap:"];
+const MINOR = [":sparkles:", "✨", ":zap:", "⚡️", ":heart:", "❤️", ":alembic:", "⚗", ":recycle:", "♻️"];
 
 module.exports = {
   parserOpts,
