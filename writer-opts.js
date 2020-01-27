@@ -50,6 +50,9 @@ function getWriterOpts() {
         return;
       }
 
+      // Trim commit header
+      commit.subject = commit.subject.trim();
+
       // Add human-readable type description for known types.
       commit.type = resolveType(commit.type);
       if (typeof commit.hash === "string") {
