@@ -203,5 +203,21 @@
   {
     "symbols": [":kr:", "🇰🇷"],
     "description": "Writing Korea specific code"
+  },
+  {
+    "symbols": [":triangular_flag_on_post:", "🚩"],
+    "description": "Adding, updating, or removing feature flags"
+  },
+  {
+    "symbols": [":goal_net:", "🥅"],
+    "description": "Adding or updating animations and transitions"
+  },
+  {
+    "symbols": [":dizzy:", "💫"],
+    "description": "Writing Korea specific code"
+  },
+  {
+    "symbols": [":wastebasket:", "🗑"],
+    "description": "Deprecating code that needs to be cleaned up."
   }
 ]
