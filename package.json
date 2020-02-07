@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-gitmoji",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "conventional-changelog gitmoji preset",
   "main": "index.js",
   "repository": {
